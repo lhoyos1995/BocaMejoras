@@ -21,7 +21,12 @@ URL del Sitio Local del Concurso: Campo para ingresar la URL local del concurso.
 ```bash
 git clone https://github.com/lhoyos1995/BocaMejoras.git
 cd BocaMejoras
-ng serve --open
+
+Abrir Visual Studio Code y tu proyecto.
+Instalar la extensión "Live Server".
+Dar clic derecho al archivo HTML login
+seleccionar la opcion "Open with Live Server".
+
 
 ##Ingreso a la aplicacion
 User: admin
