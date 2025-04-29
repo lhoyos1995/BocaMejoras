@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-cogs"></i> Context</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i> Import</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Options</a></li>
+            <li><a href="login.html"><i class="fas fa-info-circle"></i> Logout</a></li>
+        </ul>
+    </div>
+  
+    <div class="content">
+        <form id="Form" class="row g-3">
+            <h1>Formulario Boca</h1>
+            <div class="col-md-6">
+                <label for="contest-number" class="form-label">Número del Concurso:</label>
+                <input type="number" class="form-control" required id="contest-number" name="contest-number" placeholder="Ingresa el número del concurso">
+            </div>
+            <div class="col-md-6">
+                <label for="name" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="name" name="name" required placeholder="Ingresa el nombre del concurso">
+            </div>
+            <div class="col-md-6">
+                <label for="start-date" class="form-label">Fecha de Inicio:</label>
+                <input type="datetime-local" class="form-control" required id="start-date" name="start-date">
+            </div>
+            <div class="col-md-6">
+                <label for="duration" class="form-label">Duración (en minutos):</label>
+                <input type="number" class="form-control" id="duration" name="duration" placeholder="Ingresa la duración en minutos">
+            </div>
+            <div class="col-md-6">
+                <label for="stop-answering" class="form-label">Detener Respuestas (en minutos):</label>
+                <input type="number" class="form-control" id="stop-answering" name="stop-answering" placeholder="Minutos para detener respuestas">
+            </div>
+            <div class="col-md-6">
+                <label for="stop-scoreboard" class="form-label">Detener Marcador (en minutos):</label>
+                <input type="number" class="form-control" id="stop-scoreboard" name="stop-scoreboard" placeholder="Minutos para detener marcador">
+            </div>
+            <div class="col-md-6">
+                <label for="penalty" class="form-label">Penalización (en minutos):</label>
+                <input type="number" class="form-control" id="penalty" name="penalty" placeholder="Minutos de penalización">
+            </div>
+            <div class="col-md-6">
+                <label for="max-file-size" class="form-label">Tamaño Máximo de Archivo (en KB):</label>
+                <input type="number" class="form-control" id="max-file-size" name="max-file-size" placeholder="Tamaño máximo permitido en KB">
+            </div>
+            <div class="col-md-6">
+                <label for="main-site-url" class="form-label">URL del Sitio Principal del Concurso:</label>
+                <input type="url" class="form-control" id="main-site-url" name="main-site-url" placeholder="Ingresa la URL del sitio principal">
+            </div>
+            <div class="col-md-6">
+                <label for="local-site-number" class="form-label">Número del Sitio Local del Concurso:</label>
+                <input type="number" class="form-control" id="local-site-number" name="local-site-number" placeholder="Número del sitio local">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100" id="submit-button">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="scriptFormulario.js"></script>
+</body>
+</html>

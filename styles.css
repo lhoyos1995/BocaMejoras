@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradient background */
+}
+.menu {
+    width: 20%;
+    background: #2c3e50; /* Dark menu background */
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    overflow-y: auto;
+}
+.menu h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ecf0f1;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+.menu ul li {
+    margin: 15px 0;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.menu ul li a:hover {
+    background: #34495e;
+}
+.menu ul li a i {
+    margin-right: 10px;
+}
+.content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 20px 0 0 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+    width: 100%;
+    max-width: 700px;
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+form h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+.form-label {
+    font-weight: 600;
+    color: #34495e;
+}
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    transition: border-color 0.3s;
+}
+.form-control:focus, .form-select:focus {
+    border-color: #74ebd5;
+    box-shadow: 0 0 5px rgba(116, 235, 213, 0.5);
+}
+.btn-primary {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+.btn-primary:hover {
+    background: linear-gradient(135deg, #acb6e5, #74ebd5);
+}
+
+
